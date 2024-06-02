@@ -7,8 +7,7 @@
 html {
   font-size: 62.5%;
 }
-html,
-body {
+html, body {
   font-family: "Inter", sans-serif;
   font-weight: 300;
   line-height: 1.4;
@@ -60,9 +59,16 @@ main {
   align-items: center;
 }
 
-.hero_content h1 {
+.hero_content h1 p {
   font-size: 6rem;
   line-height: 1.2;
+  animation-name: heading;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+@keyframes heading{
+  80%{color: rgb(150, 25, 25);}
+  20%{ color: black;}
 }
 .hero_content h4 {
   font-size: 2.5rem;
@@ -84,7 +90,13 @@ main {
   border-radius: 0.5rem;
   overflow: hidden;
 }
-
+.h-card:hover{
+  box-shadow:4px 4px 4px #060505;
+}
+.card_wrapper:hover{
+  box-shadow: 0px 0px 4px #060505;
+}
+.c
 .card_content1 {
   padding: 2rem;
   display: flex;
@@ -133,9 +145,6 @@ main {
   border: 1px solid #e2e2e2;
   border-radius: 0.5rem;
   overflow: hidden;
-}
-.v-card:hover{
-    box-shadow: 2px 2px 2px transparent black;
 }
 .card_content h2{
     height: 3rem;
@@ -229,3 +238,4 @@ article {
 a {
   text-decoration: none;
   color: #000;
+}
